@@ -6,6 +6,7 @@ export const Home = () => {
     const getPersonajes = async() => {
         const url=`https://breakingbadapi.com/api/characters?limit=20&offset=20`;
         const resp = await (await fetch(url)).json();
+
         setPersonajes(resp);
     }
     useEffect(() => {

@@ -3,10 +3,8 @@ import React, { useEffect, useState } from 'react'
 export const PersonajeCard = ({Personaje}) => {
     const [personaje1, setPersonaje1] = useState({imagen:'', ocupacion:'', nombre:''});
     const getPersonajes = async() => {
-        const url= Personaje.url;
-        const resp = await fetch(url);
-        const {occupation,img, name} = await resp.json();
-        const ocupacion1 = occupation[0];
+        const {occupation,img, name} = Personaje;
+        const  ocupacion1 = occupation[0];
         setPersonaje1({imagen:img, ocupacion:ocupacion1, nombre:name});
         console.log("hey"+personaje1)
     }
