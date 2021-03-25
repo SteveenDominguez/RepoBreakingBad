@@ -1,22 +1,21 @@
 import React from 'react'
 import {NavLink} from 'react-router-dom'
+import './Menu.css'
 
 export const Menu = () => {
     return (
-        <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
-            <div className="navbar-collapse">
-                <div className="navbar-nav">
-                    <NavLink activeClassName="active" className="nav-item nav-link" exact to="/home">
+        <nav className="nav-wrapper">
+                <div className="left hide-on-med-and-down">
+                    <NavLink activeClassName="active" exact to="/home" style={{padding: 10, color: 'black'}}>
                         Inicio
                     </NavLink>
-                    <NavLink activeClassName="active" className="nav-item nav-link" exact to="/buscar">
+                    <NavLink activeClassName="active" exact to="/buscar" style={{padding: 10, color: 'black'}}>
                         Buscar
                     </NavLink>
-                    <NavLink activeClassName="active" className="nav-item nav-link" exact to="/sobreNosotros">
-                        SobreNosotros
+                    <NavLink activeClassName="active" exact to="/sobreNosotros" style={{padding: 10, color:'black'}}>
+                        Sobre Nosotros
                     </NavLink>
                 </div>
-            </div>
         </nav>
     )
 }
