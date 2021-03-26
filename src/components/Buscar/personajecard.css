@@ -1,10 +1,10 @@
 #cont-card{
-    background-color: cyan;
+    background: linear-gradient(0deg , rgb(2, 2, 46), rgb(24, 41, 58) 10%, rgb(2, 2, 46))
 }
 #cont-card-main{
 }
 
-#personaje-card{
+#card-content{
 }
 
 #img-personaje{

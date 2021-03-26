@@ -26,7 +26,7 @@ export const PersonajeCard2 = ({ personaje }) => {
                 <div className="card-image waves-effect waves-block waves-light">
                     <img className="activator " id="img-personaje" src={personaje.img} alt={personaje.nombre} />
                 </div>
-                <div className="card-content">
+                <div className="card-content" style={{color:'white'}}>
                     {personaje.nombre}
                 </div>
                 <div className="card-reveal">
