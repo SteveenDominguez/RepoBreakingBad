@@ -1,16 +1,15 @@
-#cont-buscar{
-}
+
 #cont-form{
     width: 50%;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 #cont-form form{
     width: 70%;
     margin: auto;
 }
 #cont-form form input{
-    color: rgb(2, 2, 46);
+    color-adjust: rgb(2, 2, 46);
     text-align: center;
     width: 100%;
 }

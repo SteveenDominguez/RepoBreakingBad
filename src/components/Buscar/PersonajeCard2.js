@@ -6,11 +6,12 @@ export const PersonajeCard2 = ({ personaje }) => {
     const { appearance } = personaje
 
     const getQuote = async () => {
-        if(personaje.id > 0){
-        const url = `https://breakingbadapi.com/api/quotes/${personaje.id}`
+        
+        const url = `https://breakingbadapi.com/api/quote?author=${personaje.nombre}`
+        console.log(url)
         const resp = await (await fetch(url)).json();
         setQuote(resp)
-        }
+        
 
     }
 
