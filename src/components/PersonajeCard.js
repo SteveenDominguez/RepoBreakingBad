@@ -11,20 +11,21 @@ export const PersonajeCard = ({ Personaje }) => {
     useEffect(() => {
         getPersonajes();
     }, [])
+    
     return (
         <div className="card-main">
             <div className="card">
                 <div className="card-image waves-effect waves-block waves-light">
-                    <img className="activator" src={personaje1.imagen} alt={personaje1.nombre} />
+                    <img className="activator" src={personaje1.imagen} alt={personaje1.nombre} style={{height: 400, objectFit: 'cover' }}/>
                 </div>
-                <div className="card-content">
-                    {personaje1.nombre}
+                <div className="card-content" style={{background: 'linear-gradient(0deg , rgb(4, 4, 78), rgb(38, 65, 92) 10%, rgb(4, 4, 78))'}}>
+                    <p style={{color: 'white'}}>{personaje1.nombre}</p>
                 </div>
-                <div className="card-reveal">
-                    <span className="card-title grey-text text-darken-4">{personaje1.nombre}<i className="material-icons right">close</i></span>
-                    <p>Ocupacion: {personaje1.ocupacion}</p>
-                    <p>Cumpleaños: {personaje1.cumpleanos}</p>
-                    <p>Apodo: {personaje1.apodo}</p>
+                <div className="card-reveal" style={{background: 'radial-gradient(rgb(49, 83, 117), rgb(38, 65, 92) , rgb(4, 4, 78))'}}>
+                    <span className="card-title grey-text text-darken-4" ><p style={{color: 'white'}}>{personaje1.nombre}</p><i className="material-icons right">close</i></span>
+                    <p style={{color: 'white'}}>Ocupacion: {personaje1.ocupacion}</p>
+                    <p style={{color: 'white'}}>Cumpleaños: {personaje1.cumpleanos}</p>
+                    <p style={{color: 'white'}}>Apodo: {personaje1.apodo}</p>
                 </div>
             </div>
         </div>
