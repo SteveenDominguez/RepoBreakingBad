@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { PersonajeCard } from '../PersonajeCard';
+import './index.css'
+
 export const Home = () => {
     const [personajes, setPersonajes] = useState([]);
     const getPersonajes = async() => {
@@ -12,7 +14,7 @@ export const Home = () => {
         getPersonajes();
     }, [])
     return (
-        <div style={{justifyContent: 'center'}}>
+        <div id="home-cards">
             {
                 personajes.map(Personaje=>{
                     return(

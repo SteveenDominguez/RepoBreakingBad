@@ -8,11 +8,16 @@
     width: 70%;
     margin: auto;
 }
-#cont-form form input{
-    color-adjust: rgb(2, 2, 46);
+#input-form{
+    color: #020238;
+    font-weight: bold;
     text-align: center;
     width: 100%;
 }
+
+#input-form::-webkit-input-placeholder { 
+    color: #020238; 
+} 
 
 #cont-mostrar{
     width: 31%;

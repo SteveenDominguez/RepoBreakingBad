@@ -56,6 +56,7 @@ export const Buscar = ({ history }) => {
             <div id="cont-form">
                 <form onSubmit={handleSearch}>
                     <input
+                        id="input-form"
                         type="text"
                         placeholder="Nombre personaje"
                         name="searchtext"
