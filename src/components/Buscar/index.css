@@ -1,0 +1,21 @@
+#cont-buscar{
+}
+#cont-form{
+    width: 50%;
+    margin: auto;
+    margin-top: 20px;
+}
+#cont-form form{
+    width: 70%;
+    margin: auto;
+}
+#cont-form form input{
+    color: aqua;
+    text-align: center;
+    width: 100%;
+}
+
+#cont-mostrar{
+    width: 31%;
+    margin: auto;
+}

@@ -7,7 +7,6 @@ export const PersonajeCard = ({ Personaje }) => {
         const { occupation, img, name, birthday, nickname } = Personaje;
         const ocupacion1 = occupation[0];
         setPersonaje1({ imagen: img, ocupacion: ocupacion1, nombre: name, cumpleanos: birthday, apodo:nickname });
-        console.log("hey" + personaje1)
     }
     useEffect(() => {
         getPersonajes();
@@ -22,7 +21,7 @@ export const PersonajeCard = ({ Personaje }) => {
                     {personaje1.nombre}
                 </div>
                 <div className="card-reveal">
-                    <span class="card-title grey-text text-darken-4">{personaje1.nombre}<i class="material-icons right">close</i></span>
+                    <span className="card-title grey-text text-darken-4">{personaje1.nombre}<i className="material-icons right">close</i></span>
                     <p>Ocupacion: {personaje1.ocupacion}</p>
                     <p>Cumpleaños: {personaje1.cumpleanos}</p>
                     <p>Apodo: {personaje1.apodo}</p>

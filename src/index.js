@@ -2,10 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import {Principal} from './components/Principal';
+import {Principal} from './components/Principal/Principal';
+import { MainRouter } from './components/router/MainRouter';
 
 ReactDOM.render(
-  <Principal/>,
+  <MainRouter/>,
   document.getElementById('root')
 );
 
