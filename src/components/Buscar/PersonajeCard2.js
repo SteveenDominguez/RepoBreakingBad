@@ -29,8 +29,9 @@ export const PersonajeCard2 = ({ personaje }) => {
                 <div className="card-content" style={{color:'white'}}>
                     {personaje.nombre}
                 </div>
-                <div className="card-reveal">
-                    <span className="card-title grey-text text-darken-4">{personaje.nombre}<i className="material-icons right">close</i></span>
+                <div className="card-reveal" id="reverso">
+                    <span className="card-title text-darken-4" style={{color:'white'}} >{personaje.nombre}<i className="material-icons right">close</i></span>
+                    <br/>
                     <span className="card-title grey-text text-darken-4">Frases:</span>
                     
                     <ul>

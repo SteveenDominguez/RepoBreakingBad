@@ -1,6 +1,6 @@
 import React from 'react'
 import {Switch, Route, BrowserRouter as Router} from 'react-router-dom';
-import { Buscar } from '../Buscar';
+import { Buscar } from '../Buscar/index';
 import { ErrorPage } from '../ErrorPage';
 import { Home } from '../Home'
 import { SobreNosotros } from '../SobreNosotros';
