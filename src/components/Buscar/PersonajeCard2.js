@@ -4,6 +4,8 @@ import './personajecard.css'
 export const PersonajeCard2 = ({ personaje }) => {
     const [quote, setQuote] = useState([])
     const { appearance } = personaje
+    
+    
 
     const getQuote = async () => {
         
@@ -19,7 +21,7 @@ export const PersonajeCard2 = ({ personaje }) => {
         getQuote();
 
     }, [])
-
+    
     return (
         <div id="personaje-card">
             <div className="card-main" id="cont-card-main">
@@ -29,18 +31,29 @@ export const PersonajeCard2 = ({ personaje }) => {
                 </div>
                 <div className="card-content" style={{color:'white'}}>
                     {personaje.nombre}
+                    
                 </div>
                 <div className="card-reveal" id="reverso">
                     <span className="card-title text-darken-4" style={{color:'white'}} >{personaje.nombre}<i className="material-icons right">close</i></span>
                     <br/>
-                    <span className="card-title grey-text text-darken-4">Frases:</span>
+                    <span className="card-title white-text text-darken-4">Frases:</span>
                     
                     <ul>
+                        
                         {
                             quote.map(quote => (
                                 <li key={quote.quote_id} id="frase"> - {quote.quote}</li>
                             ))
                         }
+                    </ul>
+                    <span className="card-title white-text text-darken-4">Apariciones:</span>
+                    
+                    <ul>
+                        {appearance.map(apariciones=>(
+                        <li key={apariciones} id="frase">Temporada: {apariciones}</li>
+                        ))
+                    }
+                        
                     </ul>
                 </div>
             </div>
