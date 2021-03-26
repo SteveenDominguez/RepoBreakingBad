@@ -12,8 +12,8 @@ export const Menu = () => {
                     <NavLink activeClassName="active" exact to="/buscar" style={{padding: 10, color: 'white'}}>
                         Buscar
                     </NavLink>
-                    <NavLink activeClassName="active" exact to="/sobreNosotros" style={{padding: 10, color:'white'}}>
-                        Sobre Nosotros
+                    <NavLink activeClassName="active" exact to="/episodios" style={{padding: 10, color:'white'}}>
+                        Episodios
                     </NavLink>
                     
                         <img  className="brand-logo right" style={{marginRight:60}} src="https://upload.wikimedia.org/wikipedia/commons/7/77/Breaking_Bad_logo.svg" alt="logo" width="90px" height="65px"></img>

@@ -4,6 +4,8 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import {Principal} from './components/Principal/Principal';
 import { MainRouter } from './components/router/MainRouter';
+import { indexepisodios } from './components/Episodios/index';
+
 
 ReactDOM.render(
   <MainRouter/>,
