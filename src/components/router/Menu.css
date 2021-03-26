@@ -1,5 +1,9 @@
 nav {
-    background-color: rgb(29, 243, 161) !important;
+    background: linear-gradient(0deg , rgb(2, 2, 46), rgb(24, 41, 58) 10%, rgb(2, 2, 46)) !important;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
 }
 
 
